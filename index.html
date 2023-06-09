@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@0.14.3/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@0.14.3/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <title>Laboratory work 1</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <script type="text/babel">
+        class List extends React.Component {
+            render() {
+                return (
+                    <ul>
+                        <li>Елемент 1</li>
+                        <li>Елемент 2</li>
+                        <li>Елемент 3</li>
+                        <li>Елемент 4</li>
+                    </ul>
+                );
+            }
+        }
+        ReactDOM.render(<List />, document.getElementById('root'))
+    </script>
+
+</body>
+
+</html>
